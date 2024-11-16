@@ -1,0 +1,111 @@
+  /**
+  * RETRO BUTTON
+  */
+  .rsvp-button-y2k {
+    /* Base styles */
+    background: var(--y2k-gradient);
+    padding: 12px 30px;
+    border: 3px outset var(--y2k-border);
+    border-radius: 0;
+    
+    /* Text styles */
+    font-family: "Comic Sans MS", "MS Sans Serif", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--y2k-text);
+    text-shadow: 
+      2px 2px 0 var(--y2k-shadow),
+      -1px -1px 0 var(--y2k-shadow),
+      1px -1px 0 var(--y2k-shadow),
+      -1px 1px 0 var(--y2k-shadow);
+    
+    /* Effects */
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.1s;
+    letter-spacing: 1px;
+    box-shadow: 
+      3px 3px 0 var(--y2k-shadow),
+      inset 2px 2px 10px rgba(255, 255, 255, 0.5),
+      inset -2px -2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hover state */
+  .rsvp-button-y2k:hover {
+    background: linear-gradient(
+      to bottom,
+      var(--y2k-primary),
+      var(--y2k-secondary)
+    );
+    transform: scale(1.05);
+    animation: rainbow 3s infinite;
+  }
+  
+  /* Active/Click state */
+  .rsvp-button-y2k:active {
+    border-style: inset;
+    transform: translateY(2px);
+    box-shadow: 
+      1px 1px 0 var(--y2k-shadow),
+      inset -2px -2px 10px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Rainbow animation */
+  @keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+  
+  /* Star animations */
+  .button-text::before,
+  .button-text::after {
+    content: "★";
+    position: absolute;
+    animation: blink 1s infinite;
+  }
+  
+  .button-text::before {
+    left: 10px;
+  }
+  
+  .button-text::after {
+    right: 10px;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+/**
+* MORE Y2k STYLES
+*/
+
+.container-y2k {
+    background: var(--bg-main);
+    background-image: url('stars.gif'); /* Star background */
+    color: var(--text-primary);
+    font-family: "Comic Sans MS", cursive;
+  }
+  
+  .header-y2k {
+    background: linear-gradient(to right, var(--y2k-primary), var(--y2k-secondary));
+    padding: 20px;
+    border: 3px outset var(--y2k-border-secondary);
+  }
+  
+  marquee {
+    font-size: 24px;
+    color: var(--text-primary);
+    text-shadow: 2px 2px var(--bg-main);
+  }
+  
+  .counter-y2k {
+    background: var(--bg-secondary); /* Classic Windows blue */
+    border: 3px ridge var(--y2k-border-secondary);
+    padding: 15px;
+    text-align: center;
+  }
+  

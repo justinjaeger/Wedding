@@ -1,0 +1,18 @@
+body {
+    background-image: url('../assets/images/bg_sm.png'); /* Adjust path based on your file structure */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 10%; /* Makes the image 80% of its original size */
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(217deg, rgba(255, 0, 255, 0.2), rgba(255, 0, 255,0) 70%);
+    pointer-events: none;
+    z-index: 1;
+  }

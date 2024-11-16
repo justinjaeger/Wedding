@@ -1,0 +1,28 @@
+/**
+* DECLARE COLORS
+*/
+
+:root {
+    /* Main colors */
+    --y2k-primary: #ff00ff;    /* Hot pink */
+    --y2k-secondary: #00ffff;  /* Cyan */
+    --y2k-border: #c0c0c0;     /* Silver */
+    --y2k-border-secondary: #808080; /* Darker silver */
+    --y2k-text: #ffffff;       /* White */
+    --y2k-shadow: #000000;     /* Black */
+    
+    /* Gradients */
+    --y2k-gradient: linear-gradient(
+        to bottom,
+        var(--y2k-secondary),
+        var(--y2k-primary)
+    );
+    
+    /* Background colors */
+    --bg-main: #000000;
+    --bg-secondary: #000080;  /* Navy */
+    
+    /* Text colors */
+    --text-primary: #ffffff;
+    --text-secondary: #c0c0c0;
+  }

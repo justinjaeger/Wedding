@@ -1,0 +1,136 @@
+.piggy-survey-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #ffff00, #ff9900);
+    border: 5px outset #ff00ff;
+    padding: 20px;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
+    z-index: 1000;
+    animation: piggy-border-blink 1s infinite;
+  }
+  
+  .piggy-survey-content {
+    text-align: center;
+    font-size: 18px;
+    color: blue;
+    text-shadow: 1px 1px #fff;
+  }
+  
+  .piggy-submit-btn {
+    background: #00ff00;
+    border: 3px outset #00cc00;
+    padding: 5px 15px;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .piggy-submit-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    border: 3px outset #999999;
+  }
+  
+  .piggy-thank-you-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background-size: 400% 400%;
+    animation: piggy-gradient-shift 3s ease infinite, piggy-border-blink 1s infinite;
+    border: 15px ridge #ff00ff;
+    padding: 40px;
+    min-width: 500px;
+    min-height: 400px;
+    box-shadow: 20px 20px 0 rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  
+  .piggy-thank-you-content {
+    text-align: center;
+    font-size: 24px;
+    color: yellow;
+    text-shadow: 
+      2px 2px 0 blue,
+      -2px -2px 0 blue,
+      2px -2px 0 blue,
+      -2px 2px 0 blue;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .piggy-thank-you-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    animation: piggy-bounce 0.5s infinite;
+  }
+  
+  .piggy-thank-you-btn {
+    background: linear-gradient(to bottom, #00ff00, #008800);
+    border: 8px outset #00ff00;
+    padding: 15px 30px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    transform: rotate(-5deg);
+    transition: transform 0.3s;
+  }
+  
+  .piggy-thank-you-btn:hover {
+    transform: rotate(5deg) scale(1.1);
+  }
+  
+  .piggy-sparkle {
+    position: absolute;
+    font-size: 40px;
+    animation: piggy-spin 2s linear infinite;
+  }
+  
+  .piggy-sparkle-1 { top: 10px; left: 10px; animation-delay: 0s; }
+  .piggy-sparkle-2 { top: 10px; right: 10px; animation-delay: 0.5s; }
+  .piggy-sparkle-3 { bottom: 10px; left: 10px; animation-delay: 1s; }
+  .piggy-sparkle-4 { bottom: 10px; right: 10px; animation-delay: 1.5s; }
+  
+  .piggy-marquee {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #ff0;
+    white-space: nowrap;
+    animation: piggy-marquee 15s linear infinite;
+  }
+  
+  @keyframes piggy-gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes piggy-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes piggy-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes piggy-marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes piggy-border-blink {
+    0% { border-color: #ff00ff; }
+    50% { border-color: #00ffff; }
+    100% { border-color: #ff00ff; }
+  }

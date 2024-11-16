@@ -1,0 +1,43 @@
+.clipart-text {
+    font-family: "Chalkboard SE", "Comic Sans MS", "Bradley Hand", cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: bounce 2s ease-in-out infinite;
+    display: inline-block;
+    padding: 20px;
+    letter-spacing: 2px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Add wobble effect on hover */
+  .clipart-text:hover {
+    animation: wobble 0.5s ease-in-out;
+  }
+  
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+  }
+  

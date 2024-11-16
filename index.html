@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/y2k.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/toptabs.css">
+  <link rel="stylesheet" href="css/bg.css">
+  <link rel="stylesheet" href="css/other.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/font.css">
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- Welcome banner  -->
+    <div class="container-y2k">
+        <div class="header-y2k">
+            <marquee scrollamount="3">✧･ﾟ Welcome to Our Wedding Website ･ﾟ✧</marquee>
+        </div>
+        
+        <div class="counter-y2k">
+            <!-- Days until countdown -->
+            <div class="construction">
+                <div id="days-until-wedding" class="clipart-text"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Top Tabs -->
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab active" data-tab="home">✨ Home ✨</div>
+            <div class="tab" data-tab="our-story">💫 Our Story 💫</div>
+            <div class="tab" data-tab="gallery">⭐ Gallery ⭐</div>
+            <div class="tab" data-tab="location">💫 Location 💫</div>
+            <div class="tab" data-tab="hotel">💫 Accommodations 💫</div>
+        </div>
+        <div class="content">            
+            <div class="modal" id="imageModal">
+                <div class="modal-content">
+                <button id="gallery-close-button" class="close-button">X</button>
+                <img id="modalImage" src="" alt="Enlarged image">
+                </div>
+            </div>
+            <!-- Piggy survey -->
+            <div id="surveyModal" class="piggy-survey-popup">
+                <div class="piggy-survey-content">
+                  <h2>⭐ IMPORTANT SURVEY! ⭐</h2>
+                  <p>Who makes the best piggy noise?</p>
+                  <div class="radio-group">
+                    <input type="radio" id="justin" name="piggy" value="justin">
+                    <label for="justin">Justin</label>
+                    <br>
+                    <input type="radio" id="sam" name="piggy" value="sam">
+                    <label for="sam">Sam</label>
+                  </div>
+                  <button style="margin-top: 20px;" class="piggy-submit-btn" onclick="closeModal()">SUBMIT!!!</button>
+                </div>
+              </div>
+               <!-- Piggy survey thank you -->
+              <div id="piggyThankYouModal" class="piggy-thank-you-popup">
+                <div class="piggy-sparkle piggy-sparkle-1">✨</div>
+                <div class="piggy-sparkle piggy-sparkle-2">⭐</div>
+                <div class="piggy-sparkle piggy-sparkle-3">⭐</div>
+                <div class="piggy-sparkle piggy-sparkle-4">✨</div>
+                
+                <div class="piggy-thank-you-content">
+                <p style="font-size: 36px; color: #ff0;">Your piggy noise preference has been</p>
+                  <h2 class="piggy-thank-you-title">~*~ RECORDED ~*~</h2>
+                  <!-- <p style="font-size: 28px;">Your piggy noise preference has been</p> -->
+                  <img src="./assets/gif/pig-cute-little-pig.gif" alt="Description of gif" class="your-class-name">
+                  <div class="piggy-marquee">
+                    🐷 OINK OINK OINK OINK OINK OINK 🐷
+                  </div>
+                  <button class="piggy-thank-you-btn" onclick="closeThankYouModal()">
+                    ⭐ thank you for confirming ⭐
+                  </button>
+                </div>
+              </div>
+            <!-- Tab Panels -->
+            <div class="tab-panel active" id="home">
+                <!-- <h2>Welcome to the Digital Dream! ✨</h2>
+                <p>Step into our cyber world where everything sparkles and glows! This is Y2K reimagined!</p> -->
+                <!-- RSVP Button-->
+                 <div style="display:flex;flex-direction: column;">
+                    <img src="./assets/images/24.jpg" alt="Description of image" class="your-class-name" style="width:80%; display: flex; align-self: center;"/>
+                </div>
+                <div style="display:flex; justify-content: center; width: 100%;">
+                    <button 
+                        style="margin-top: 20px;"
+                        class="rsvp-button-y2k" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe9TJywxpNOGBbOhBZRhU6MzM7OzOj8l8TNxzVBOj8eqshVfw/viewform?usp=sf_link'">
+                        <span class="button-text">✧･ﾟ RSVP ･ﾟ✧</span>
+                    </button>
+                </div>
+            </div>
+            <div class="tab-panel" id="gallery">
+                <!-- <h2>Digital Art Gallery ⭐</h2>
+                <p>Explore our collection of cyber-aesthetic masterpieces from the golden age of the internet!</p> -->
+                <!-- PHOTO GALLERY-->
+                <div class="gallery-container">
+                    <!-- <h1 class="gallery-header">✨ My Cool Photo Gallery ✨</h1> -->
+                    <div class="gallery"></div>
+                    
+                    <div class="button-container">
+                    <button id="nav-button-prev" class="navigation-button">◄ Previous</button>
+                    <button id="nav-button-next" class="navigation-button">Next ►</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel" id="location">
+                <body><b>The Foundry</b></body>
+                <a href="https://www.thefoundry.info/directions" style="color: white; display:flex;flex-direction: column;">
+                    <p style="margin: 0px">42-38 Ninth Street</p>
+                    <p style="margin: 0px; padding: 0px">Long Island City, NY 11101</p>
+                </a>
+            </div>
+            <div class="tab-panel" id="our-story">
+                <p>One day a Sam was born.</p>
+                <p>Dragging herself from the primordial soup from which The Virgin God birthed her,
+                she felt a pit in her stomach. Hunger.
+                </p>
+                <p>She absorbed what nutrients the earth could offer her infant form, but the dirt could not satiate her. Her tummy's quest was greater.</p>
+                </p>
+                <p>"Where is the cake! What happened to the cake!" The Sam cried out. She longed for the delicacies of her past life in Cake World.</p>
+                <p>God answered her prayer and granted her hands and a few more brain cells.</p>
+                <p>The Sam went on to craft the best cakes in the land, consumed by all creatures.</p>
+                <p>But while the creatures abrorbed the cake's nutrients, they ate indiscriminantly. They had no taste.</p>
+                <p>Sad Sam wished for a buddy who could appreciate the art of cakemaking.</p>
+                <p>That night she made the most unique cake the world had ever known.</p>
+                <p>A Justin was born.</p>
+                <p>Sugar, flower, goat hooves, caterpillar fuzz, and monkeys milk.</p>
+                <p>She taught him the abcs of cake making, but he did not possess the dexterity from his caterpillar vessel and goat hooves.</p>
+                <p>"You are no prodigy," The Sam huffed.</p>
+                <p>Cake making ceased while The Justin gorged himself in the discarded mountains of red velvet and vanilla icing.</p>
+                <p>After the mountain was fully consumed, The Justin writhed in dual pains of tummyache and withdrawl.</p>
+                <p>His cries were so pitiful that The Sam came to his aid.</p>
+                <p>"Cake or death," he wheezed.</p>
+                <p>The Sam realized The Justin was the perfect audience for her cakes all along.</p>
+                <p>And so the lost souls, united by buttercream and despair, were forever bound.</p>
+            </div>
+            <div class="tab-panel" id="hotel"></div>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/toptabs.js"></script>
+    <script src="js/popup.js"></script>
+
+</body>
+
+</html>
