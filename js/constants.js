@@ -23,8 +23,6 @@ const GALLERY_IMAGES = [
     'assets/images/23.jpg',
     'assets/images/24.jpg',
     'assets/images/25.jpg',
-    'assets/images/28.jpg',
-    'assets/images/29.jpg',
 ]
 
 module.exports = {

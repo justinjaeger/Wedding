@@ -103,9 +103,8 @@
   }
   
   .counter-y2k {
-    background: var(--bg-secondary); /* Classic Windows blue */
     border: 3px ridge var(--y2k-border-secondary);
-    padding: 15px;
+    padding: 5px;
     text-align: center;
   }
   

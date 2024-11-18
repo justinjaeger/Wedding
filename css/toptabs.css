@@ -13,13 +13,13 @@
     50% { transform: translateY(-5px); }
   }
 
-  body {
+  /* body {
     background: linear-gradient(135deg, #000033, #000066);
     font-family: "Arial", sans-serif;
     margin: 20px;
     color: white;
     min-height: 100vh;
-  }
+  } */
 
   .sparkle {
     position: absolute;
@@ -32,9 +32,10 @@
   }
 
   .tab-container {
-    /* max-width: 800px; */
+    max-width: 1000px;
     margin: 20px auto;
     position: relative;
+    opacity: 0.9;
   }
 
   .tabs {

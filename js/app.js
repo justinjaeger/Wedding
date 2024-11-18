@@ -118,7 +118,7 @@ function getWeddingCountdown() {
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
     
     // Create the countdown text
-    return `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until the wedding!!!`;
+    return `in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
 }
 
 // Update the countdown every second
@@ -141,3 +141,10 @@ function startCountdown() {
 
 // Start the countdown
 startCountdown();
+
+// show/hide rsvp form
+const rsvpButton = document.getElementsByClassName('rsvp-button-y2k');
+rsvpButton[0].addEventListener('click', () => {
+    const rsvpForm = document.getElementById('rsvp');
+    rsvpForm.style.display = 'flex';
+})

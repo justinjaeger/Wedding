@@ -7,7 +7,7 @@
   <title></title>
 
   <link rel="stylesheet" href="css/root.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"> 
   <link rel="stylesheet" href="css/y2k.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/toptabs.css">
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/other.css">
   <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/heartsAnim.css"> 
+  <link rel="stylesheet" href="css/frame.css"> 
 
   <meta name="description" content="">
 
@@ -34,16 +36,9 @@
 
 <body>
   <!-- Welcome banner  -->
-    <div class="container-y2k">
+    <div class="container-y2k" >
         <div class="header-y2k">
-            <marquee scrollamount="3">✧･ﾟ Welcome to Our Wedding Website ･ﾟ✧</marquee>
-        </div>
-        
-        <div class="counter-y2k">
-            <!-- Days until countdown -->
-            <div class="construction">
-                <div id="days-until-wedding" class="clipart-text"></div>
-              </div>
+            <marquee scrollamount="20">✧･ﾟ Justin and Sam's Companionship Celebration ･ﾟ✧</marquee>
         </div>
     </div>
 
@@ -100,18 +95,41 @@
               </div>
             <!-- Tab Panels -->
             <div class="tab-panel active" id="home">
-                <!-- <h2>Welcome to the Digital Dream! ✨</h2>
-                <p>Step into our cyber world where everything sparkles and glows! This is Y2K reimagined!</p> -->
-                <!-- RSVP Button-->
-                 <div style="display:flex;flex-direction: column;">
-                    <img src="./assets/images/24.jpg" alt="Description of image" class="your-class-name" style="width:80%; display: flex; align-self: center;"/>
+                <div style="display: flex;align-items: center; justify-content: center; text-align: center; align-self: center; margin-bottom: 10px;">
+                <!-- Days until countdown -->
+                <div class="construction" style="display: flex; flex-direction: column;">
+                    <div class="clipart-text">August 31, 2025</div>
+                    <div id="days-until-wedding" class="clipart-text"></div>
                 </div>
+                </div>
+                <!-- RSVP Button -->
                 <div style="display:flex; justify-content: center; width: 100%;">
                     <button 
-                        style="margin-top: 20px;"
-                        class="rsvp-button-y2k" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe9TJywxpNOGBbOhBZRhU6MzM7OzOj8l8TNxzVBOj8eqshVfw/viewform?usp=sf_link'">
+                        style="margin-bottom: 20px;"
+                        class="rsvp-button-y2k">
                         <span class="button-text">✧･ﾟ RSVP ･ﾟ✧</span>
                     </button>
+                </div>
+                 <!-- RSVP iframe -->
+                 <div style="display: none; width: 100%; display: flex; justify-content: center; align-items: center; margin: 0 auto; padding: 20px; pointer-events: none;">
+                    <div id="rsvp" style="display: none; max-width: 640px; width: 100%; pointer-events: auto;">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9TJywxpNOGBbOhBZRhU6MzM7OzOj8l8TNxzVBOj8eqshVfw/viewform?embedded=true"
+                            width="640"
+                            style="width: 100%; height: 600px" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+                 <!-- Main Image -->
+                <div style="width:100%; display: flex;align-items: center; justify-content: center;">
+                    <div class="y2k-frame" style="max-width: 800px; align-self: center;">
+                        <span class="heart-border heart-1">♥</span>
+                        <span class="heart-border heart-2">♥</span>
+                        <span class="heart-border heart-3">♥</span>
+                        <span class="heart-border heart-4">♥</span>
+                        <img src="./assets/images/24.jpg" alt="Description of image" class="your-class-name"/>
+                    </div>
                 </div>
             </div>
             <div class="tab-panel" id="gallery">
@@ -135,7 +153,7 @@
                     <p style="margin: 0px; padding: 0px">Long Island City, NY 11101</p>
                 </a>
             </div>
-            <div class="tab-panel" id="our-story">
+            <div class="tab-panel" id="our-story" style="color: white;">
                 <p>One day a Sam was born.</p>
                 <p>Dragging herself from the primordial soup from which The Virgin God birthed her,
                 she felt a pit in her stomach. Hunger.
@@ -167,6 +185,7 @@
     <script src="js/app.js"></script>
     <script src="js/toptabs.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/heartsAnim.js"></script>
 
 </body>
 

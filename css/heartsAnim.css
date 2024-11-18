@@ -1,0 +1,73 @@
+.heart {
+    position: fixed;
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 1;
+  }
+
+  .whale {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    z-index: 2;
+    will-change: transform;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/images/whale-closed.png');
+    transition: background-image 0.1s;
+  }
+
+  .swimming-right {
+    animation: swimRight 8s linear infinite;
+  }
+
+  .swimming-left {
+    animation: swimLeft 8s linear infinite;
+  }
+
+  .eaten {
+    animation: eaten 0.5s ease-in forwards !important;
+  }
+  @keyframes floatHearts {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+   @keyframes swimRight {
+      0% {
+        transform: translateX(-100vw);
+      }
+      100% {
+        transform: translateX(100vw);
+      }
+    }
+
+    @keyframes swimLeft {
+      0% {
+        transform: translateX(100vw);
+      }
+      100% {
+        transform: translateX(-100vw);
+      }
+    }
+
+  @keyframes eaten {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }

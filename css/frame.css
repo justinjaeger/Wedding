@@ -1,0 +1,59 @@
+    .y2k-frame {
+      position: relative;
+      display: inline-block; /* Only take up as much space as needed */
+      padding: 20px;
+      background: linear-gradient(to right, #ffccff, #ccffff);
+      border: 3px solid #ff66cc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 102, 204, 0.5);
+    }
+
+    .y2k-frame img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .y2k-frame::before {
+      content: '♥';
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      font-size: 24px;
+      color: #ff66cc;
+      animation: pulse 1.5s infinite;
+    }
+
+    .y2k-frame::after {
+      content: '♥';
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      font-size: 24px;
+      color: #ff66cc;
+      animation: pulse 1.5s infinite;
+    }
+
+    .heart-border {
+      position: absolute;
+      font-size: 20px;
+      color: #ff66cc;
+      animation: sparkle 2s infinite;
+    }
+
+    .heart-1 { top: 0; left: 50%; transform: translateX(-50%); }
+    .heart-2 { bottom: 0; left: 50%; transform: translateX(-50%); }
+    .heart-3 { left: 0; top: 50%; transform: translateY(-50%); }
+    .heart-4 { right: 0; top: 50%; transform: translateY(-50%); }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes sparkle {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
