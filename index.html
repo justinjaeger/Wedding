@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/other.css">
   <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/heartsAnim.css"> 
+  <link rel="stylesheet" href="css/animations.css"> 
   <link rel="stylesheet" href="css/frame.css"> 
 
   <meta name="description" content="">
@@ -70,29 +70,111 @@
                     <input type="radio" id="sam" name="piggy" value="sam">
                     <label for="sam">Sam</label>
                   </div>
-                  <button style="margin-top: 20px;" class="piggy-submit-btn" onclick="closeModal()">SUBMIT!!!</button>
+                  <button style="margin-top: 20px;" class="piggy-submit-btn" onclick="closeSurveyModal()">SUBMIT!!!</button>
                 </div>
-              </div>
-               <!-- Piggy survey thank you -->
-              <div id="piggyThankYouModal" class="piggy-thank-you-popup">
+            </div>
+            <!-- Piggy survey thank you -->
+            <div id="piggyThankYouModal" class="piggy-thank-you-popup">
                 <div class="piggy-sparkle piggy-sparkle-1">✨</div>
                 <div class="piggy-sparkle piggy-sparkle-2">⭐</div>
                 <div class="piggy-sparkle piggy-sparkle-3">⭐</div>
                 <div class="piggy-sparkle piggy-sparkle-4">✨</div>
                 
                 <div class="piggy-thank-you-content">
-                <p style="font-size: 36px; color: #ff0;">Your piggy noise preference has been</p>
-                  <h2 class="piggy-thank-you-title">~*~ RECORDED ~*~</h2>
-                  <!-- <p style="font-size: 28px;">Your piggy noise preference has been</p> -->
-                  <img src="./assets/gif/pig-cute-little-pig.gif" alt="Description of gif" class="your-class-name">
-                  <div class="piggy-marquee">
-                    🐷 OINK OINK OINK OINK OINK OINK 🐷
-                  </div>
-                  <button class="piggy-thank-you-btn" onclick="closeThankYouModal()">
-                    ⭐ thank you for confirming ⭐
-                  </button>
+                    <p style="font-size: 36px; color: #ff0;">Your piggy noise preference has been</p>
+                    <h2 class="piggy-thank-you-title">~*~ RECORDED ~*~</h2>
+                    <img src="./assets/gif/pig-cute-little-pig.gif" alt="stupidly cute piglet" class="your-class-name">
+                    <div class="piggy-marquee">
+                        🐷 OINK OINK OINK OINK OINK OINK 🐷
+                    </div>
+                    <button class="piggy-thank-you-btn" onclick="
+                        // the choosening is complete 
+                        localStorage.removeItem('piggyChoosing')
+                        closeModalById('piggyThankYouModal')
+                    ">
+                        ⭐ thank you for confirming ⭐
+                    </button>
                 </div>
-              </div>
+            </div>
+            <!-- Second Piggy survey -->
+            <div id="secondSurveyModal" class="piggy-survey-popup">
+                <div class="piggy-survey-content">
+                    <h2>⭐ IMPORTANT SURVEY! ⭐</h2>
+                    <p>Sorry I know we already asked you who makes the best piggy noise</p>
+                    <p>but we want to make sure you really give it some thought</p>
+                    <p>and share your truth in this forum.</p>
+                    <p>Please, this is really important to us.</p>
+                    <p>Think about it.</p>
+                    <p>Go through the mental rollodex.</p>
+                    <p>Every oink we've oinked.</p>
+                    <p>Every snort we've snorted.</p>
+                    <p>Now think about a pig.</p>
+                    <p>Imagine rolling in the mud with one.</p>
+                    <p>Hear the joyous sounds it makes as it indulges</p>
+                    <p>in one of the basest, greatest pleasures it knows.</p>
+                    <p>Does it sound more like Justin...</p>
+                    <p>Or does it sound more like Sam?</p>
+                    <div class="radio-group">
+                    <input type="radio" id="justin" name="piggy" value="justin">
+                    <label for="justin">Justin</label>
+                    <br>
+                    <input type="radio" id="sam" name="piggy" value="sam">
+                    <label for="sam">Sam</label>
+                    </div>
+                    <button style="margin-top: 20px;" class="piggy-submit-btn" onclick="
+                        closeModalById('secondSurveyModal')
+                        openModalById('thirdSurveyModal')
+                    ">I'VE THOUGHT ABOUT IT</button>
+                </div>
+            </div>
+            <!-- Third Piggy survey -->
+            <div id="thirdSurveyModal" class="piggy-survey-popup">
+                <div class="piggy-survey-content">
+                  <h2>⭐ Stop rushing! ⭐</h2>
+                  <p>Now that I think about it, this isn't just about us.</p>
+                  <p>If someone else makes a better piggy noise you need to tell us.</p>
+                  <p>Don't lie to me.</p>
+                  <p>Don't lie to my wife.</p>
+                  <p>Don't lie in general.</p>
+                  <p>It's not very nice.</p>
+                  <p>If we're not making the best piggy noises we can, that's something we need to work on and change.</p>
+                  <div class="radio-group">
+                    <input type="radio" id="justin" name="piggy" value="justin">
+                    <label for="justin">Justin</label>
+                    <br>
+                    <input type="radio" id="sam" name="piggy" value="sam">
+                    <label for="sam">Sam</label>
+                    <br>
+                    <input type="radio" id="other" name="piggy" value="other">
+                    <label for="other">You both need to do better</label>
+                   </div>
+                  <button style="margin-top: 20px;" class="piggy-submit-btn" onclick="
+                    closeModalById('thirdSurveyModal')
+                    openModalById('piggyAcknowledgement')
+                  ">SUBMIT!!!</button>
+                </div>
+            </div>
+            <div id="piggyAcknowledgement" class="piggy-thank-you-popup">
+                <div class="piggy-sparkle piggy-sparkle-1">✨</div>
+                <div class="piggy-sparkle piggy-sparkle-2">⭐</div>
+                <div class="piggy-sparkle piggy-sparkle-3">⭐</div>
+                <div class="piggy-sparkle piggy-sparkle-4">✨</div>
+                
+                <div class="piggy-thank-you-content">
+                    <p style="font-size: 36px; color: #ff0;">Interesting.</p>
+                    <img src="./assets/gif/pig-cute-little-pig.gif" alt="stupidly cute piglet">
+                    <div class="piggy-marquee">
+                        🐷 OINK OINK OINK OINK OINK OINK 🐷
+                    </div>
+                    <button class="piggy-thank-you-btn" onclick="
+                        closeModalById('piggyAcknowledgement')
+                        localStorage.removeItem('userIsThinking')
+                        localStorage.setItem('userIsSure', 'Or so they say');
+                    ">
+                        ⭐ I confirm that my choices have consquences ⭐
+                    </button>
+                </div>
+            </div>
             <!-- Tab Panels -->
             <div class="tab-panel active" id="home">
                 <div style="display: flex;align-items: center; justify-content: center; text-align: center; align-self: center; margin-bottom: 10px;">
@@ -167,9 +249,9 @@
                 <p>Sad Sam wished for a buddy who could appreciate the art of cakemaking.</p>
                 <p>That night she made the most unique cake the world had ever known.</p>
                 <p>A Justin was born.</p>
-                <p>Sugar, flower, goat hooves, caterpillar fuzz, and monkeys milk.</p>
+                <p>Sugar, flower, goat hooves, caterpillar fuzz, and monkey's milk.</p>
                 <p>She taught him the abcs of cake making, but he did not possess the dexterity from his caterpillar vessel and goat hooves.</p>
-                <p>"You are no prodigy," The Sam huffed.</p>
+                <p>"You are no prodigy." The Sam huffed.</p>
                 <p>Cake making ceased while The Justin gorged himself in the discarded mountains of red velvet and vanilla icing.</p>
                 <p>After the mountain was fully consumed, The Justin writhed in dual pains of tummyache and withdrawl.</p>
                 <p>His cries were so pitiful that The Sam came to his aid.</p>
@@ -185,7 +267,7 @@
     <script src="js/app.js"></script>
     <script src="js/toptabs.js"></script>
     <script src="js/popup.js"></script>
-    <script src="js/heartsAnim.js"></script>
+    <script src="js/animations.js"></script>
 
 </body>
 
