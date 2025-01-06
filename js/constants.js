@@ -1,4 +1,4 @@
-const GALLERY_IMAGES = [
+export const GALLERY_IMAGES = [
     '../assets/images/1.jpeg',
     '../assets/images/2.jpeg',
     '../assets/images/3.jpeg',
@@ -24,7 +24,3 @@ const GALLERY_IMAGES = [
     '../assets/images/24.jpg',
     '../assets/images/25.jpg',
 ]
-
-module.exports = {
-    GALLERY_IMAGES
-}

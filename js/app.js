@@ -1,4 +1,4 @@
-const {GALLERY_IMAGES} = require('./constants');
+import {GALLERY_IMAGES} from './constants';
 
 const gallery = document.querySelector('.gallery');
 
