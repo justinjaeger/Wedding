@@ -4,4 +4,15 @@
     color: var(--m-red);;
     margin: 20px 0;
   }
-  
+
+.stories {
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .stories {
+      flex-direction: row; /* Desktop */
+    }
+  }
