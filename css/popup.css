@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(to bottom, #ffff00, #ff9900);
-    border: 5px outset #ff00ff;
+    border: 5px outset var(--m-pink);;
     padding: 20px;
     box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
     z-index: 1000;
@@ -15,7 +15,7 @@
   .piggy-survey-content {
     text-align: center;
     font-size: 18px;
-    color: blue;
+    color: var(--m-purple);
     text-shadow: 1px 1px #fff;
   }
   
@@ -40,10 +40,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background: linear-gradient(45deg, var(--m-pink), var(--m-red), var(--m-pink), var(--m-red));
     background-size: 400% 400%;
     animation: piggy-gradient-shift 3s ease infinite, piggy-border-blink 1s infinite;
-    border: 15px ridge #ff00ff;
+    border: 15px ridge var(--m-pink);
     padding: 40px;
     min-width: 500px;
     min-height: 400px;
@@ -56,10 +56,10 @@
     font-size: 24px;
     color: yellow;
     text-shadow: 
-      2px 2px 0 blue,
-      -2px -2px 0 blue,
-      2px -2px 0 blue,
-      -2px 2px 0 blue;
+      2px 2px 0 var(--m-purple),
+      -2px -2px 0 var(--m-purple),
+      2px -2px 0 var(--m-purple),
+      -2px 2px 0 var(--m-purple);
     background: rgba(0,0,0,0.6);
     padding: 20px;
     border-radius: 20px;
@@ -130,7 +130,7 @@
     100% { transform: translateX(-100%); }
   }
   @keyframes piggy-border-blink {
-    0% { border-color: #ff00ff; }
-    50% { border-color: #00ffff; }
-    100% { border-color: #ff00ff; }
+    0% { border-color: var(--m-pink); }
+    50% { border-color: var(--m-red); }
+    100% { border-color: var(--m-pink); }
   }

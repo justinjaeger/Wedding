@@ -14,10 +14,10 @@
     font-weight: bold;
     color: var(--y2k-text);
     text-shadow: 
-      2px 2px 0 var(--y2k-shadow),
-      -1px -1px 0 var(--y2k-shadow),
-      1px -1px 0 var(--y2k-shadow),
-      -1px 1px 0 var(--y2k-shadow);
+      2px 2px 0 var(--m-purple),
+      -1px -1px 0 var(--m-purple),
+      1px -1px 0 var(--m-purple)s,
+      -1px 1px 0 var(--m-purple)s;
     
     /* Effects */
     cursor: pointer;
@@ -25,10 +25,6 @@
     transform-style: preserve-3d;
     transition: all 0.1s;
     letter-spacing: 1px;
-    box-shadow: 
-      3px 3px 0 var(--y2k-shadow),
-      inset 2px 2px 10px rgba(255, 255, 255, 0.5),
-      inset -2px -2px 10px rgba(0, 0, 0, 0.3);
   }
   
   /* Hover state */
@@ -48,8 +44,8 @@
     transform: translateY(2px);
     box-shadow: 
       1px 1px 0 var(--y2k-shadow),
-      inset -2px -2px 10px rgba(255, 255, 255, 0.5),
-      inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+      inset -2px -2px 10px var(--m-pink),
+      inset var(--m-deep-red);
   }
   
   /* Rainbow animation */
@@ -91,9 +87,9 @@
   }
   
   .header-y2k {
-    background: linear-gradient(to right, var(--y2k-primary), var(--y2k-secondary));
+    background: linear-gradient(to right, var(--m-red), var(--m-pink));
     padding: 20px;
-    border: 3px outset var(--y2k-border-secondary);
+    border: 3px outset var(--m-red);
   }
   
   marquee {

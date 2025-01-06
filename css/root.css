@@ -4,12 +4,20 @@
 
 :root {
     /* Main colors */
-    --y2k-primary: #ff00ff;    /* Hot pink */
-    --y2k-secondary: #00ffff;  /* Cyan */
+    --m-purple: #160B23;
+    --m-white: #EFF1F3;
+    --m-pink: #F7D9EC;
+    --m-orange: #F8BB9B;
+    --m-red: #F37373;
+    --m-deep-red: #B52A2A;
+
+    /* Y2k colors */
+    --y2k-primary: #F37373;    /* Hot pink */
+    --y2k-secondary: #F8BB9B;  /* Cyan */
     --y2k-border: #c0c0c0;     /* Silver */
     --y2k-border-secondary: #808080; /* Darker silver */
     --y2k-text: #ffffff;       /* White */
-    --y2k-shadow: #000000;     /* Black */
+    --y2k-shadow: #160B23;     /* Black */
     
     /* Gradients */
     --y2k-gradient: linear-gradient(
@@ -20,9 +28,9 @@
     
     /* Background colors */
     --bg-main: #000000;
-    --bg-secondary: #000080;  /* Navy */
+    --bg-secondary: var(--m-purple);;  /* Navy */
     
     /* Text colors */
     --text-primary: #ffffff;
-    --text-secondary: #c0c0c0;
+    --text-secondary: var(--m-pink);;
   }

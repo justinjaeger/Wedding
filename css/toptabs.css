@@ -48,17 +48,17 @@
   .tab {
     padding: 12px 25px;
     cursor: pointer;
-    background: linear-gradient(to bottom, #ff66ff, #cc00cc);
-    border: 3px solid #ff99ff;
+    background: linear-gradient(to bottom, var(--m-pink), var(--m-red));
+    border: 3px solid var(--m-pink);
     border-bottom: none;
     border-radius: 12px 12px 0 0;
     font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
-                 0 0 10px #ff00ff,
-                 0 0 20px #ff00ff;
-    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.8),
-               0 0 15px rgba(255, 0, 255, 0.5);
+    text-shadow: 2px 2px 4px var(--m-purple),
+                 0 0 10px var(--m-red),
+                 0 0 20px var(--m-red);
+    box-shadow: inset 1px 1px 10px var(--m-pink),
+               0 0 15px  var(--m-purple);
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
@@ -72,25 +72,25 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.4), transparent);
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
     transform: rotate(45deg);
     animation: rainbow 6s linear infinite;
   }
 
   .tab.active {
-    background: linear-gradient(to bottom, #ff99ff, #ff33ff);
+    background: linear-gradient(to bottom, var(--m-orange), var(--m-deep-red));
     transform: scale(1.05);
     z-index: 2;
   }
 
   .tab:hover:not(.active) {
     transform: translateY(-3px);
-    background: linear-gradient(to bottom, #ff99ff, #ff33ff);
+    background: linear-gradient(to bottom, var(--m-white), var(--m-pink));
   }
 
   .content {
-    background: linear-gradient(45deg, #330033, #660066);
-    border: 3px solid #ff99ff;
+    background: linear-gradient(45deg,  var(--m-white), var(--m-pink));
+    border: 3px solid var(--m-pink);
     padding: 25px;
     border-radius: 0 15px 15px 15px;
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.3),

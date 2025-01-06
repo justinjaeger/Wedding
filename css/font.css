@@ -2,7 +2,7 @@
     font-family: "Chalkboard SE", "Comic Sans MS", "Bradley Hand", cursive;
     font-size: 1rem;
     font-weight: bold;
-    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+    background: linear-gradient(45deg, var(--m-deep-red), var(--m-deep-red), var(--m-deep-red), var(--m-deep-red));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
