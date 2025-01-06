@@ -78,7 +78,7 @@
   }
 
   .tab.active {
-    background: linear-gradient(to bottom, var(--m-orange), var(--m-deep-red));
+    background: linear-gradient(to bottom, var(--m-orange), var(--m-white));
     transform: scale(1.05);
     z-index: 2;
   }
