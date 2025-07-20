@@ -427,17 +427,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 5000);
     
     // Disable submit button initially
-    document.querySelector('.piggy-submit-btn').disabled = true;
+    // document.querySelector('.piggy-submit-btn').disabled = true;
     
     let piggyChoice = '';
     
     // Enable submit button when radio is selected
-    document.querySelectorAll('input[name="piggy"]').forEach(radio => {
-      radio.addEventListener('change', (e) => {
-        document.querySelector('.piggy-submit-btn').disabled = false;
-        piggyChoice = e.target.value;
-      });
-    });
+    // document.querySelectorAll('input[name="piggy"]').forEach(radio => {
+    //   radio.addEventListener('change', (e) => {
+    //     document.querySelector('.piggy-submit-btn').disabled = false;
+    //     piggyChoice = e.target.value;
+    //   });
+    // });
     
     window.closePiggy = function() {
         // Store the result

@@ -28,11 +28,11 @@
     cursor: pointer;
   }
   
-  .piggy-submit-btn:disabled {
+  /* .piggy-submit-btn:disabled {
     background: #cccccc;
     cursor: not-allowed;
     border: 3px outset #999999;
-  }
+  } */
   
   .piggy-thank-you-popup {
     display: none;
