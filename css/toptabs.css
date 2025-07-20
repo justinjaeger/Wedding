@@ -53,6 +53,7 @@
     border-bottom: none;
     border-radius: 12px 12px 0 0;
     font-weight: bold;
+    font-size: 18px;
     color: white;
     text-shadow: 2px 2px 4px var(--m-purple),
                  0 0 10px var(--m-red),
@@ -132,4 +133,59 @@ h2, h3, h1, body, h4 {
     color: #fff;
     margin: 0;
     font-weight: 400;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .tab-container {
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tab {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+  }
+  
+  .content {
+    margin: 0;
+    padding: 15px;
+    border-radius: 0 8px 8px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  /* Hide icons and decorative elements on mobile */
+  .tab::before {
+    display: none;
+  }
+  
+  .sparkle {
+    display: none;
+  }
+  
+  /* Hide emoji icons in tab text on mobile */
+  .tab {
+    font-size: 11px;
+  }
 }

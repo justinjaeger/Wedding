@@ -45,13 +45,13 @@
     <!-- Top Tabs -->
     <div class="tab-container">
         <div class="tabs">
-            <div class="tab active" data-tab="home">✨ Home ✨</div>
-            <div class="tab" data-tab="our-story">💫 Our Story 💫</div>
-            <div class="tab" data-tab="gallery">⭐ Gallery ⭐</div>
-            <div class="tab" data-tab="location">💫 Location 💫</div>
-            <div class="tab" data-tab="dress">💫 Dress 💫</div>
-            <div class="tab" data-tab="hotel">💫 Accommodations 💫</div>
-            <div class="tab" data-tab="registry">💫 Registry 💫</div>
+            <div class="tab active" data-tab="home">Home</div>
+            <div class="tab" data-tab="our-story">Our Story</div>
+            <div class="tab" data-tab="gallery">Gallery</div>
+            <!-- <div class="tab" data-tab="location">Location</div> -->
+            <div class="tab" data-tab="dress">Dress</div>
+            <div class="tab" data-tab="hotel">Accommodations</div>
+            <div class="tab" data-tab="registry">Registry</div>
         </div>
         <div class="content">            
             <div class="modal" id="imageModal">
@@ -97,10 +97,38 @@
               </div>
             <!-- Tab Panels -->
             <div class="tab-panel active" id="home">
+                <!-- Welcome Dinner and Wedding Info -->
+                <div style="display: flex; justify-content: center; margin: 20px 0 30px 0;">
+                    <div style="display: flex; gap: 40px; max-width: 900px; width: 100%; flex-wrap: wrap; justify-content: center;">
+                        <!-- Welcome Dinner -->
+                        <!-- <div style="background: linear-gradient(135deg, #FFB366, #FF8C8C); border: 3px outset var(--m-red); padding: 20px; border-radius: 10px; min-width: 300px; flex: 1;">
+                            <h2 style="color: var(--m-purple); font-family: 'Comic Sans MS', cursive; font-size: 24px; font-weight: bold; margin: 0 0 15px 0; text-align: center;">✨ Welcome Dinner ✨</h2>
+                            <div style="color: var(--m-purple); font-family: 'Comic Sans MS', cursive; font-size: 16px; line-height: 1.6;">
+                                <p style="margin: 8px 0;"><strong>Where?</strong><br>
+                                <a href="https://g.co/kgs/Q1JsPxH" style="color: var(--m-purple); text-decoration: underline;">Ci Siamo</a></p>
+                                <p style="margin: 8px 0;"><strong>When?</strong><br>August 30, 6pm</p>
+                                <p style="margin: 8px 0;"><strong>Dress</strong><br>Smart casual</p>
+                            </div>
+                        </div>
+                         -->
+                        <!-- Wedding -->
+                        <div style="background: linear-gradient(135deg, #FFB366, #FF8C8C); border: 3px outset var(--m-red); padding: 20px; border-radius: 10px; min-width: 300px; flex: 1;">
+                            <h2 style="color: var(--m-purple); font-family: 'Comic Sans MS', cursive; font-size: 24px; font-weight: bold; margin: 0 0 15px 0; text-align: center;">💫 Wedding 💫</h2>
+                            <div style="color: var(--m-purple); font-family: 'Comic Sans MS', cursive; font-size: 16px; line-height: 1.6;">
+                                <p style="margin: 8px 0;"><strong>Where?</strong><br>
+                                <a href="https://maps.app.goo.gl/kc938C8NUJUgDuPf8" style="color: var(--m-purple); text-decoration: underline;">The Foundry<br>42-38 Ninth Street<br>Long Island City, NY 11101</a></p>
+                                <p style="margin: 8px 0;"><strong>When?</strong><br>4:30pm</p>
+                                <p style="margin: 8px 0;"><strong>Dress</strong><br>Cocktail attire... or go nuts<br><span style="font-size: 14px;">(see "Dress" tab for more)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div style="display: flex;align-items: center; justify-content: center; text-align: center; align-self: center; margin-bottom: 10px;">
                 <!-- Days until countdown -->
                 <div class="construction" style="display: flex; flex-direction: column; margin-top: 20px;">
-                    <div class="clipart-text">August 31, 2025</div>
+                    <!-- <div class="clipart-text">August 31, 2025</div>
+                    <div class="clipart-text">4:30pm</div> -->
                     <div id="days-until-wedding" class="clipart-text"></div>
                 </div>
                 </div>
@@ -147,13 +175,17 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-panel" id="location">
+            <!-- <div class="tab-panel" id="location">
                 <a href="https://www.thefoundry.info/directions" style="color: #160B23; display:flex;flex-direction: column; text-decoration-color: #160B23;">
                     <h3 style="font-weight: 400; color:#160B23; margin: 0px"><b>The Foundry</b></h3>
                     <h3 style="font-weight: 400; color:#160B23; margin: 0px">42-38 Ninth Street</h3>
                     <h3 style="font-weight: 400; color:#160B23; margin: 0px; padding: 0px">Long Island City, NY 11101</h3>
                 </a>
-            </div>
+                <div style="margin-top: 20px;">
+                    <h3 style="font-weight: 400; color:#160B23; margin: 0px"><b>When?</b></h3>
+                    <h3 style="font-weight: 400; color:#160B23; margin: 0px">August 31, 4:30pm</h3>
+                </div>
+            </div> -->
             <div class="tab-panel" id="dress">
                 <h2 style="color: #160B23; font-weight: 700">Cocktail attire... or go nuts</h2>
                 <p style="color: #160B23; font-weight: 500">

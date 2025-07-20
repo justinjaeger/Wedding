@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getWeddingCountdown() {
-        const weddingDate = new Date('2025-08-31T00:00:00');
+        const weddingDate = new Date('2025-08-31T16:30:00');
         const now = new Date();
         
         const difference = weddingDate.getTime() - now.getTime();
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
         
-        return `in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
+        return `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
     }
 
     function updateCountdown() {
